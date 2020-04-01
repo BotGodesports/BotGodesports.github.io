@@ -1,0 +1,255 @@
+body {
+    background-color:black;
+    color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/* phan header */
+.header {
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+	top: 0px;
+    right: 0px;
+    left: 0px;
+    text-transform: uppercase;
+}
+
+/* phan logo */
+.logoteam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logoimg {
+    max-width: 5rem;
+    margin: 1rem  0rem 1rem 5rem;
+    border-radius: 50%;
+}
+.logotext {
+    margin: auto 1px;
+    font-family: fantasy;
+    display: inline-block;
+    font-size:40px;
+    transform: scale(.9, 1);
+    color: black;
+}
+
+/* phan menu */
+.menu {
+    margin-right: 2rem;
+}
+.menu-item {
+    display: inline-block;   
+    padding: 12px 20px;
+    position: relative;
+}
+.menu-item:hover .menu-child {
+    opacity:1;
+    visibility: visible;
+}
+.menu-link {
+    text-decoration:none;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+}
+.menu-link-players {
+    text-decoration:none;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid red;
+}
+
+/* menu hover */
+.navbar .menu-item .menu-link {
+    display: inline-block;
+    text-decoration:none;
+    padding: -20px 10px;
+}
+.navbar .menu-item .menu-link:after {
+    display:block;
+    content:'';
+    border-bottom-style:solid;
+    border-bottom-color:red;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.navbar .menu-item .menu-link:hover:after {
+    transform: scaleX(1);
+}
+.navbar .menu-child-list:hover:after {
+    transform-origin: 0% 50%; 
+}
+
+/* phan info */
+.player-body {
+    /*margin-top: 8%;
+    background-image: url(/players/players-bio/na/test.jpg);
+    background-size: cover;
+    padding: 0%;*/
+}
+.player-bio {
+   
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+}
+.player-img {
+    height: 40%;
+    width: 40%;
+   
+}
+.player-info {
+    margin-top: 8%;
+    margin-left: 1%;
+    font-size: 26px;
+}
+.info-header {
+    font-size: 32px;
+}
+strong {
+    color: #ee1e2c;
+}
+.info-body {
+    margin-top: 4rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+.flag{
+    margin-right: 10px;
+    margin-bottom: -5px;
+    border-radius: 2px;
+    height: 4%;
+    width: 4%;
+}
+.bio{
+    margin-top: 3rem;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    text-align: justify;
+}
+
+/*phan follow */
+.players-body .fa{
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.3s all;
+  }
+.player-body .facebook{
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+    margin-right: 1rem;
+    transition: 0.3s all;
+}
+.player-body .facebook:hover{
+    background: #3B5998;
+    opacity: 1
+}
+
+/* phan xem them */
+.see-more-header {
+    text-transform: uppercase;
+    margin: 3% 0 0 1%;
+}
+.see-more-body {
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+}
+.players-bio {
+    display: inline-block;
+    border: 2px red solid;
+    width: 16%;
+    margin: 0 20px 50px 20px;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: white;
+}
+.players-avt {
+    width: 100%;
+    height: 100%;
+}
+.players-link {
+    text-align: center;
+    font-size: 25px;
+    height: 70px;    
+}
+.players-bio:hover {
+    border-color: white;
+    color: red;
+}
+
+/* phan footer */
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copyright {
+    margin-left: 50px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+}
+.follow{
+    margin-right: 100px;
+}
+.fa{
+    padding: 10px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: 0.3s all;
+  }
+.fa-facebook {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+.fa-instagram {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+.fa-twitter {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+.fa-youtube {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+.fa-steam {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+.fa:hover {
+    opacity: 1;
+}
