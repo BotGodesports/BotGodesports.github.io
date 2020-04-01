@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 }
 .logoimg {
     max-width: 5rem;
