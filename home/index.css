@@ -2,6 +2,7 @@ body {
     background-color:black;
     color: white;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight:200;
 }
 
 /* phan header */
@@ -266,7 +267,8 @@ i {
     padding: 12px;
     transition: 0.3s all;
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
+
 }
 .show-more:hover {
     color:red;
